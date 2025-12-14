@@ -70,7 +70,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return a string representation of the rectangle using # characters"""
+        """Return a string"""
         if self.__width == 0 or self.__height == 0:
             return ""
         rectangle = []
@@ -79,9 +79,9 @@ class Rectangle:
         return "\n".join(rectangle)
 
     def __repr__(self):
-        """Return a string representation that can recreate the rectangle"""
+        """Return a string"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Print a message when an instance of Rectangle is deleted"""
+        """Print a message"""
         print("Bye rectangle...")

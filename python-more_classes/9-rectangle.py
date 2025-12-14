@@ -74,7 +74,8 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return a string representation of the rectangle using print_symbol"""
+        """Return a string representation of 
+        the rectangle using print_symbol"""
         if self.__width == 0 or self.__height == 0:
             return ""
         rectangle = []
@@ -83,11 +84,13 @@ class Rectangle:
         return "\n".join(rectangle)
 
     def __repr__(self):
-        """Return a string representation that can recreate the rectangle"""
+        """Return a string representation 
+        that can recreate the rectangle"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Print a message when an instance of Rectangle is deleted"""
+        """Print a message when an instance 
+        of Rectangle is deleted"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
@@ -100,7 +103,8 @@ class Rectangle:
             rect_2: Second rectangle to compare
 
         Raises:
-            TypeError: If rect_1 or rect_2 is not an instance of Rectangle
+            TypeError: If rect_1 or rect_2 
+            is not an instance of Rectangle
 
         Returns:
             The rectangle with the bigger area, or rect_1 if equal
@@ -115,12 +119,15 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """Return a new Rectangle instance with width == height == size
+        """Return a new Rectangle 
+        instance with width == height == size
 
         Args:
-            size (int): The size of the square (default: 0)
+            size (int): The size of 
+            the square (default: 0)
 
         Returns:
-            A new Rectangle instance representing a square
+            A new Rectangle instance 
+            representing a square
         """
         return cls(size, size)
