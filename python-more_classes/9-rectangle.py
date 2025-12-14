@@ -98,8 +98,7 @@ class Rectangle:
             rect_1: First rectangle to compare
             rect_2: Second rectangle to compare
         Raises:
-            TypeError: If rect_1 or rect_2 
-            is not an instance of Rectangle
+            TypeError: If rect_1 or rect_2
         Returns:
             The rectangle with the bigger area, or rect_1 if equal
         """
@@ -114,12 +113,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """Return a new Rectangle 
-        instance with width == height == size
-        Args:
-            size (int): The size of 
-            the square (default: 0)
-        Returns:
-            A new Rectangle instance 
-            representing a square
+        Args:size (int): The size of the square (default: 0)
+        Returns:A new Rectangle instance  representing a square
         """
         return cls(size, size)
