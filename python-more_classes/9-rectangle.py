@@ -74,8 +74,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return a string representation of 
-        the rectangle using print_symbol"""
+        """Return a string representation of"""
         if self.__width == 0 or self.__height == 0:
             return ""
         rectangle = []
@@ -84,28 +83,23 @@ class Rectangle:
         return "\n".join(rectangle)
 
     def __repr__(self):
-        """Return a string representation 
-        that can recreate the rectangle"""
+        """Return a string representation"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Print a message when an instance 
-        of Rectangle is deleted"""
+        """Print a message when an instance"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the biggest rectangle based on the area
-
         Args:
             rect_1: First rectangle to compare
             rect_2: Second rectangle to compare
-
         Raises:
             TypeError: If rect_1 or rect_2 
             is not an instance of Rectangle
-
         Returns:
             The rectangle with the bigger area, or rect_1 if equal
         """
@@ -121,11 +115,9 @@ class Rectangle:
     def square(cls, size=0):
         """Return a new Rectangle 
         instance with width == height == size
-
         Args:
             size (int): The size of 
             the square (default: 0)
-
         Returns:
             A new Rectangle instance 
             representing a square
